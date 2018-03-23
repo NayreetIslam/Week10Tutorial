@@ -34,6 +34,7 @@ public class BuggyCode {
 		BuggyCode.bcImpossibleInstanceOfWRONG();
 		// CORRECT
 		BuggyCode.bcImpossibleInstanceOfCORRECT();
+		/*
 
 		System.out.println("BuggyCode Sample 004 for BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY");
 		// WRONG
@@ -42,6 +43,8 @@ public class BuggyCode {
 		} catch (final ClassCastException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
+
+		*/
 		// CORRECT
 		BuggyCode.bcImpossibleDowncastOfArrayCORRECT();
 
