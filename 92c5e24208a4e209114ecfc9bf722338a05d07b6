@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "78b1aeda_79945784",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013764
+      },
+      "writtenOn": "2018-03-26T14:48:14Z",
+      "side": 1,
+      "message": "The changes look good! Good to submit!",
+      "revId": "92c5e24208a4e209114ecfc9bf722338a05d07b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
