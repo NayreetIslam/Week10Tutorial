@@ -16,6 +16,23 @@
       "revId": "2d5490ad588fcceab49268693de057472cfa0765",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a283c716_3e342b89",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013757
+      },
+      "writtenOn": "2018-03-26T14:54:25Z",
+      "side": 1,
+      "message": "This code is refactored well. The wrong code was erased and the correct code was implemented with catch exceptions and results are maintained to be correct.",
+      "revId": "2d5490ad588fcceab49268693de057472cfa0765",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
