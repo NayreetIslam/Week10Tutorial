@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1b615d36_4afc8068",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013766
+      },
+      "writtenOn": "2018-03-26T14:49:32Z",
+      "side": 0,
+      "message": "Probably a good idea to remove the // WRONG comments as well, but otherwise all is good!",
+      "revId": "a946988cc907714e20f90224478b1f6164b64df9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bc16a671_ce417b2e",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013766
+      },
+      "writtenOn": "2018-03-26T14:49:32Z",
+      "side": 0,
+      "message": "delete this",
+      "range": {
+        "startLine": 13,
+        "startChar": 2,
+        "endLine": 13,
+        "endChar": 10
+      },
+      "revId": "a946988cc907714e20f90224478b1f6164b64df9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9b391fff_159b8372",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1013766
+      },
+      "writtenOn": "2018-03-26T14:49:32Z",
+      "side": 0,
+      "message": "delete",
+      "range": {
+        "startLine": 23,
+        "startChar": 2,
+        "endLine": 23,
+        "endChar": 10
+      },
+      "revId": "a946988cc907714e20f90224478b1f6164b64df9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f00dd4ed_7fb32ad1",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1013766
+      },
+      "writtenOn": "2018-03-26T14:49:32Z",
+      "side": 0,
+      "message": "delete",
+      "range": {
+        "startLine": 87,
+        "startChar": 2,
+        "endLine": 87,
+        "endChar": 10
+      },
+      "revId": "a946988cc907714e20f90224478b1f6164b64df9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
