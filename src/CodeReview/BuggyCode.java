@@ -1,4 +1,4 @@
-package CodeReview;
+package src.CodeReview;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -11,81 +11,51 @@ public class BuggyCode {
 
 		System.out.println("BuggyCode Sample 001 for BC_IMPOSSIBLE_CAST");
 		// WRONG
-		try {
-			BuggyCode.bcImpossibleCastWRONG();
-		} catch (final ClassCastException e) {
-			System.out.println("   - ERROR:" + e.getMessage());
-		}
 		// CORRECT
 		BuggyCode.bcImpossibleCastCORRECT();
 
 		System.out.println("BuggyCode Sample 002 for BC_IMPOSSIBLE_DOWNCAST");
 		// WRONG
-		try {
-			BuggyCode.bcImpossibleDowncastWRONG();
-		} catch (final ClassCastException e) {
-			System.out.println("   - ERROR:" + e.getMessage());
-		}
 		// CORRECT
 		BuggyCode.bcImpossibleDowncastCORRECT();
 
 		System.out.println("BuggyCode Sample 003 for BC_IMPOSSIBLE_INSTANCEOF");
 		// WRONG
-		BuggyCode.bcImpossibleInstanceOfWRONG();
 		// CORRECT
 		BuggyCode.bcImpossibleInstanceOfCORRECT();
 
 		System.out.println("BuggyCode Sample 004 for BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY");
 		// WRONG
-		try {
-			BuggyCode.bcImpossibleDowncastOfArrayWRONG();
-		} catch (final ClassCastException e) {
-			System.out.println("   - ERROR:" + e.getMessage());
-		}
 		// CORRECT
 		BuggyCode.bcImpossibleDowncastOfArrayCORRECT();
 
 		System.out.println("BuggyCode Sample 005 for DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE");
 		// WRONG
-		BuggyCode.dmiBigDecimalConstructedFromDoubleWRONG();
 		// CORRECT
 		BuggyCode.dmiBigDecimalConstructedFromDoubleCORRECT();
 
 		System.out.println("BuggyCode Sample 006 for ES_COMPARING_STRINGS_WITH_EQ");
 		// WRONG
-		BuggyCode.esComparingStringsWithEqWRONG();
 		// CORRECT
 		BuggyCode.esComparingStringsWithEqCORRECT();
 
 		System.out.println("BuggyCode Sample 007 for VA_FORMAT_STRING_ILLEGAL");
 		// WRONG
-		try {
-			BuggyCode.vaFormatStringIllegalWRONG();
-		} catch (final UnknownFormatConversionException e) {
-			System.out.println("   - ERROR:" + e.getMessage());
-		}
 		// CORRECT
 		BuggyCode.vaFormatStringIllegalCORRECT();
 
 		System.out.println("BuggyCode Sample 008 for RV_RETURN_VALUE_IGNORED");
 		// WRONG
-		BuggyCode.rvReturnValueIgnoredWRONG();
 		// CORRECT
 		BuggyCode.rvReturnValueIgnoredCORRECT();
 
 		System.out.println("BuggyCode Sample 009 for NP_ALWAYS_NULL");
 		// WRONG
-		try {
-			BuggyCode.npAlwaysNullWRONG();
-		} catch (final NullPointerException e) {
-			System.out.println("   - ERROR:" + e.getMessage());
-		}
 		// CORRECT
 		BuggyCode.npAlwaysNullCORRECT();
 
 		System.out.println("BuggyCode Sample 010 for QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT");
 		// WRONG
-		BuggyCode.qabQuestionableBooleanAssignmentWRONG();
 		// CORRECT
 		BuggyCode.qabQuestionableBooleanAssignmentCORRECT();
 
