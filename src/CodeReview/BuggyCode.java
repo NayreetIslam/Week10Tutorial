@@ -1,4 +1,5 @@
-package CodeReview;
+package week10;
+
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -93,10 +94,9 @@ public class BuggyCode {
 
 	private static void bcImpossibleCastWRONG() {
 		final Object doubleValue = Double.valueOf(1.0);
-		final Long value = (Long) doubleValue;
+		final Double value = (Double) doubleValue;
 		System.out.println("   - " + value);
 	}
-
 	private static void bcImpossibleCastCORRECT() {
 		final Object doubleValue = Double.valueOf(1.0);
 		final Double value = (Double) doubleValue;
@@ -105,7 +105,7 @@ public class BuggyCode {
 
 	private static void bcImpossibleDowncastWRONG() {
 		final Object exception = new RuntimeException("abc");
-		final SecurityException value = (SecurityException) exception;
+		final RuntimeException value = (RuntimeException) exception;
 		System.out.println("   - " + value.getMessage());
 	}
 
@@ -117,7 +117,7 @@ public class BuggyCode {
 
 	private static void bcImpossibleInstanceOfWRONG() {
 		final Object value = Double.valueOf(1.0);
-		System.out.println("   - " + (value instanceof Long));
+		System.out.println("   - " + (value instanceof Double));
 	}
 
 	private static void bcImpossibleInstanceOfCORRECT() {
@@ -129,7 +129,7 @@ public class BuggyCode {
 		final Collection<String> stringVector = new ArrayList<String>();
 		stringVector.add("abc");
 		stringVector.add("xyz");
-		final String[] stringArray = (String[]) stringVector.toArray();
+		final String[] stringArray = stringVector.toArray(new String[stringVector.size()]);
 		System.out.println("   - " + stringArray.length);
 	}
 
@@ -142,7 +142,7 @@ public class BuggyCode {
 	}
 
 	private static void dmiBigDecimalConstructedFromDoubleWRONG() {
-		final BigDecimal bigDecimal = new BigDecimal(3.1);
+		final BigDecimal bigDecimal = new BigDecimal("3.1");
 		System.out.println("   - " + bigDecimal.toString());
 	}
 
@@ -156,7 +156,7 @@ public class BuggyCode {
 		final StringBuilder sb2 = new StringBuilder("1234");
 		final String string1 = sb1.toString();
 		final String string2 = sb2.toString();
-		System.out.println("   - " + (string1 == string2));
+		System.out.println("   - " + string1.equals(string2));
 	}
 
 	private static void esComparingStringsWithEqCORRECT() {
@@ -168,7 +168,7 @@ public class BuggyCode {
 	}
 
 	private static void vaFormatStringIllegalWRONG() {
-		System.out.println(String.format("   - %>s  %s", "10", "9"));
+		System.out.println(String.format("   - %s > %s", "10", "9"));
 	}
 
 	private static void vaFormatStringIllegalCORRECT() {
@@ -177,7 +177,7 @@ public class BuggyCode {
 
 	private static void rvReturnValueIgnoredWRONG() {
 		final BigDecimal bigDecimal = BigDecimal.ONE;
-		bigDecimal.add(BigDecimal.ONE);
+		final BigDecimal newValue = bigDecimal.add(BigDecimal.ONE);
 		System.out.println(String.format("   - " + bigDecimal));
 	}
 
@@ -189,7 +189,7 @@ public class BuggyCode {
 
 	private static void npAlwaysNullWRONG() {
 		final String value = null;
-		if (null != value & value.length() > 2) {
+		if (null != value && value.length() > 2) {
 			System.out.println(String.format("   - " + value));
 		} else {
 			System.out.println(String.format("   - value is invalid"));
@@ -207,7 +207,7 @@ public class BuggyCode {
 
 	private static void qabQuestionableBooleanAssignmentWRONG() {
 		boolean value = false;
-		if (value = true) {
+		if (value == true) {
 			System.out.println(String.format("   - value is true"));
 		} else {
 			System.out.println(String.format("   - value is false"));
@@ -224,3 +224,4 @@ public class BuggyCode {
 	}
 
 }
+
