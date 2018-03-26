@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3cbbddbd_534bd3ea",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1013754
+      },
+      "writtenOn": "2018-03-26T14:59:44Z",
+      "side": 1,
+      "message": "You did a great job copying and pasting",
+      "range": {
+        "startLine": 12,
+        "startChar": 2,
+        "endLine": 12,
+        "endChar": 38
+      },
+      "revId": "30a02a61b1267b4758d64ca1e9c76bbce9560ab2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
