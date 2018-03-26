@@ -10,7 +10,7 @@ public class BuggyCode {
 	public static void main(final String[] args) {
 
 		System.out.println("BuggyCode Sample 001 for BC_IMPOSSIBLE_CAST");
-		// WRONG
+		//WRONG
 		try {
 			BuggyCode.bcImpossibleCastWRONG();
 		} catch (final ClassCastException e) {
