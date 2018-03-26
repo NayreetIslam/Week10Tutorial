@@ -90,12 +90,13 @@ public class BuggyCode {
 		BuggyCode.qabQuestionableBooleanAssignmentCORRECT();
 
 	}
-
+	
 	private static void bcImpossibleCastWRONG() {
 		final Object doubleValue = Double.valueOf(1.0);
-		final Long value = (Long) doubleValue;
+		final Long value = (long) Math.round((float) doubleValue);
 		System.out.println("   - " + value);
 	}
+
 
 	private static void bcImpossibleCastCORRECT() {
 		final Object doubleValue = Double.valueOf(1.0);
