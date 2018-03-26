@@ -1,5 +1,7 @@
 package CodeReview;
 
+//Group 10: Joshua Pineda and Anthony DeSouza
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
