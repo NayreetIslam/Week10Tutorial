@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "068a2bb9_d4e448b1",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013767
+      },
+      "writtenOn": "2018-03-26T14:54:04Z",
+      "side": 0,
+      "message": "+2 Looks good",
+      "revId": "a946988cc907714e20f90224478b1f6164b64df9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "261b9e2f_37c58f49",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 190,
+      "author": {
+        "id": 1013767
+      },
+      "writtenOn": "2018-03-26T14:54:04Z",
+      "side": 0,
+      "message": "+2 removed bad method",
+      "revId": "a946988cc907714e20f90224478b1f6164b64df9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
