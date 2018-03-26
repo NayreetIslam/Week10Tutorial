@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "535cf540_69fc3e5c",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013759
+      },
+      "writtenOn": "2018-03-26T14:48:19Z",
+      "side": 0,
+      "message": "Noice, I like how you removed the actual wrong functions as well as the references",
+      "revId": "a946988cc907714e20f90224478b1f6164b64df9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
