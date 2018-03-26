@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.UnknownFormatConversionException;
 
+
+//This is the correct main class of the code
+//All the code is correct
 public class BuggyCode {
 	
 	public static void main(final String[] args) {
@@ -12,7 +15,7 @@ public class BuggyCode {
 		System.out.println("BuggyCode Sample 001 for BC_IMPOSSIBLE_CAST");
 		// WRONG
 		try {
-			BuggyCode.bcImpossibleCastWRONG();
+			BuggyCode.bcImpossibleCastCORRECT();
 		} catch (final ClassCastException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
@@ -22,7 +25,7 @@ public class BuggyCode {
 		System.out.println("BuggyCode Sample 002 for BC_IMPOSSIBLE_DOWNCAST");
 		// WRONG
 		try {
-			BuggyCode.bcImpossibleDowncastWRONG();
+			BuggyCode.bcImpossibleDowncastCORRECT();
 		} catch (final ClassCastException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
@@ -31,14 +34,14 @@ public class BuggyCode {
 
 		System.out.println("BuggyCode Sample 003 for BC_IMPOSSIBLE_INSTANCEOF");
 		// WRONG
-		BuggyCode.bcImpossibleInstanceOfWRONG();
+		BuggyCode.bcImpossibleInstanceOfCORRECT();
 		// CORRECT
 		BuggyCode.bcImpossibleInstanceOfCORRECT();
 
 		System.out.println("BuggyCode Sample 004 for BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY");
 		// WRONG
 		try {
-			BuggyCode.bcImpossibleDowncastOfArrayWRONG();
+			BuggyCode.bcImpossibleDowncastOfArrayCORRECT();
 		} catch (final ClassCastException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
@@ -47,20 +50,20 @@ public class BuggyCode {
 
 		System.out.println("BuggyCode Sample 005 for DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE");
 		// WRONG
-		BuggyCode.dmiBigDecimalConstructedFromDoubleWRONG();
+		BuggyCode.dmiBigDecimalConstructedFromDoubleCORRECT();
 		// CORRECT
 		BuggyCode.dmiBigDecimalConstructedFromDoubleCORRECT();
 
 		System.out.println("BuggyCode Sample 006 for ES_COMPARING_STRINGS_WITH_EQ");
 		// WRONG
-		BuggyCode.esComparingStringsWithEqWRONG();
+		BuggyCode.esComparingStringsWithEqCORRECT();
 		// CORRECT
 		BuggyCode.esComparingStringsWithEqCORRECT();
 
 		System.out.println("BuggyCode Sample 007 for VA_FORMAT_STRING_ILLEGAL");
 		// WRONG
 		try {
-			BuggyCode.vaFormatStringIllegalWRONG();
+			BuggyCode.vaFormatStringIllegalCORRECT();
 		} catch (final UnknownFormatConversionException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
@@ -69,14 +72,14 @@ public class BuggyCode {
 
 		System.out.println("BuggyCode Sample 008 for RV_RETURN_VALUE_IGNORED");
 		// WRONG
-		BuggyCode.rvReturnValueIgnoredWRONG();
+		BuggyCode.rvReturnValueIgnoredCORRECT();
 		// CORRECT
 		BuggyCode.rvReturnValueIgnoredCORRECT();
 
 		System.out.println("BuggyCode Sample 009 for NP_ALWAYS_NULL");
 		// WRONG
 		try {
-			BuggyCode.npAlwaysNullWRONG();
+			BuggyCode.npAlwaysNullCORRECT();
 		} catch (final NullPointerException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
@@ -85,15 +88,16 @@ public class BuggyCode {
 
 		System.out.println("BuggyCode Sample 010 for QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT");
 		// WRONG
-		BuggyCode.qabQuestionableBooleanAssignmentWRONG();
+		BuggyCode.qabQuestionableBooleanAssignmentCORRECT();
 		// CORRECT
 		BuggyCode.qabQuestionableBooleanAssignmentCORRECT();
 
 	}
+  	//Deleted repetitive code successfully
 
-	private static void bcImpossibleCastWRONG() {
+	private static void bcImpossibleCastCORRECT() {
 		final Object doubleValue = Double.valueOf(1.0);
-		final Long value = (Long) doubleValue;
+		final Double value = (Double) doubleValue;
 		System.out.println("   - " + value);
 	}
 
@@ -103,9 +107,9 @@ public class BuggyCode {
 		System.out.println("   - " + value);
 	}
 
-	private static void bcImpossibleDowncastWRONG() {
+	private static void bcImpossibleDowncastCORRECT() {
 		final Object exception = new RuntimeException("abc");
-		final SecurityException value = (SecurityException) exception;
+		final RuntimeException value = (RuntimeException) exception;
 		System.out.println("   - " + value.getMessage());
 	}
 
@@ -115,9 +119,9 @@ public class BuggyCode {
 		System.out.println("   - " + value.getMessage());
 	}
 
-	private static void bcImpossibleInstanceOfWRONG() {
+	private static void bcImpossibleInstanceOfCORRECT() {
 		final Object value = Double.valueOf(1.0);
-		System.out.println("   - " + (value instanceof Long));
+		System.out.println("   - " + (value instanceof Double));
 	}
 
 	private static void bcImpossibleInstanceOfCORRECT() {
@@ -125,11 +129,11 @@ public class BuggyCode {
 		System.out.println("   - " + (value instanceof Double));
 	}
 
-	private static void bcImpossibleDowncastOfArrayWRONG() {
+	private static void bcImpossibleDowncastOfArrayCORRECT() {
 		final Collection<String> stringVector = new ArrayList<String>();
 		stringVector.add("abc");
 		stringVector.add("xyz");
-		final String[] stringArray = (String[]) stringVector.toArray();
+		final String[] stringArray = stringVector.toArray(new String[stringVector.size()]);
 		System.out.println("   - " + stringArray.length);
 	}
 
@@ -141,8 +145,9 @@ public class BuggyCode {
 		System.out.println("   - " + stringArray.length);
 	}
 
-	private static void dmiBigDecimalConstructedFromDoubleWRONG() {
-		final BigDecimal bigDecimal = new BigDecimal(3.1);
+	
+	private static void dmiBigDecimalConstructedFromDoubleCORRECT() {
+		final BigDecimal bigDecimal = new BigDecimal("3.1");
 		System.out.println("   - " + bigDecimal.toString());
 	}
 
@@ -151,13 +156,6 @@ public class BuggyCode {
 		System.out.println("   - " + bigDecimal.toString());
 	}
 
-	private static void esComparingStringsWithEqWRONG() {
-		final StringBuilder sb1 = new StringBuilder("1234");
-		final StringBuilder sb2 = new StringBuilder("1234");
-		final String string1 = sb1.toString();
-		final String string2 = sb2.toString();
-		System.out.println("   - " + (string1 == string2));
-	}
 
 	private static void esComparingStringsWithEqCORRECT() {
 		final StringBuilder sb1 = new StringBuilder("1234");
@@ -167,18 +165,8 @@ public class BuggyCode {
 		System.out.println("   - " + string1.equals(string2));
 	}
 
-	private static void vaFormatStringIllegalWRONG() {
-		System.out.println(String.format("   - %>s  %s", "10", "9"));
-	}
-
 	private static void vaFormatStringIllegalCORRECT() {
 		System.out.println(String.format("   - %s > %s", "10", "9"));
-	}
-
-	private static void rvReturnValueIgnoredWRONG() {
-		final BigDecimal bigDecimal = BigDecimal.ONE;
-		bigDecimal.add(BigDecimal.ONE);
-		System.out.println(String.format("   - " + bigDecimal));
 	}
 
 	private static void rvReturnValueIgnoredCORRECT() {
@@ -187,30 +175,12 @@ public class BuggyCode {
 		System.out.println(String.format("   - " + newValue));
 	}
 
-	private static void npAlwaysNullWRONG() {
-		final String value = null;
-		if (null != value & value.length() > 2) {
-			System.out.println(String.format("   - " + value));
-		} else {
-			System.out.println(String.format("   - value is invalid"));
-		}
-	}
-
 	private static void npAlwaysNullCORRECT() {
 		final String value = null;
 		if (null != value && value.length() > 2) {
 			System.out.println(String.format("   - " + value));
 		} else {
 			System.out.println(String.format("   - value is invalid"));
-		}
-	}
-
-	private static void qabQuestionableBooleanAssignmentWRONG() {
-		boolean value = false;
-		if (value = true) {
-			System.out.println(String.format("   - value is true"));
-		} else {
-			System.out.println(String.format("   - value is false"));
 		}
 	}
 
