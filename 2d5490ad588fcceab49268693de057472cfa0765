@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "904f198e_be0877e8",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013755
+      },
+      "writtenOn": "2018-03-26T14:51:53Z",
+      "side": 1,
+      "message": "This code looks good.",
+      "revId": "2d5490ad588fcceab49268693de057472cfa0765",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
