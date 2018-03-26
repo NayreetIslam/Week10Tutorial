@@ -9,7 +9,7 @@ public class BuggyCode {
 	
 	public static void main(final String[] args) {
 
-		//System.out.println("BuggyCode Sample 001 for BC_IMPOSSIBLE_CAST");
+		System.out.println("BuggyCode Sample 001 for BC_IMPOSSIBLE_CAST");
 		// WRONG
 		try {
 			BuggyCode.bcImpossibleCastWRONG();
@@ -19,7 +19,7 @@ public class BuggyCode {
 		// CORRECT
 		BuggyCode.bcImpossibleCastCORRECT();
 
-		//System.out.println("BuggyCode Sample 002 for BC_IMPOSSIBLE_DOWNCAST");
+		System.out.println("BuggyCode Sample 002 for BC_IMPOSSIBLE_DOWNCAST");
 		// WRONG
 		try {
 			BuggyCode.bcImpossibleDowncastWRONG();
@@ -29,12 +29,12 @@ public class BuggyCode {
 		// CORRECT
 		BuggyCode.bcImpossibleDowncastCORRECT();
 
-		//System.out.println("BuggyCode Sample 003 for BC_IMPOSSIBLE_INSTANCEOF");
+		System.out.println("BuggyCode Sample 003 for BC_IMPOSSIBLE_INSTANCEOF");
 		// WRONG
 		BuggyCode.bcImpossibleInstanceOfWRONG();
 		// CORRECT
 		BuggyCode.bcImpossibleInstanceOfCORRECT();
-		/*
+		
 
 		System.out.println("BuggyCode Sample 004 for BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY");
 		// WRONG
@@ -44,7 +44,7 @@ public class BuggyCode {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
 
-		*/
+		
 		// CORRECT
 		BuggyCode.bcImpossibleDowncastOfArrayCORRECT();
 
