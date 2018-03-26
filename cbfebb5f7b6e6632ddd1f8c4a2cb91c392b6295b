@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7bbd3330_c109c1be",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1013758
+      },
+      "writtenOn": "2018-03-26T14:49:55Z",
+      "side": 1,
+      "message": "All correct. Well done.",
+      "range": {
+        "startLine": 36,
+        "startChar": 2,
+        "endLine": 36,
+        "endChar": 74
+      },
+      "revId": "cbfebb5f7b6e6632ddd1f8c4a2cb91c392b6295b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "db0e7f78_8b50dde4",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1013758
+      },
+      "writtenOn": "2018-03-26T14:49:55Z",
+      "side": 1,
+      "message": "All correct. Well done.",
+      "range": {
+        "startLine": 12,
+        "startChar": 2,
+        "endLine": 50,
+        "endChar": 54
+      },
+      "revId": "cbfebb5f7b6e6632ddd1f8c4a2cb91c392b6295b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
