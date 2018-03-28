@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.UnknownFormatConversionException;
 
+//I was instructed not to worry about refactoring. Just push to master. Jacob Morra, 100395426
+
 public class BuggyCode {
 	
 	public static void main(final String[] args) {
