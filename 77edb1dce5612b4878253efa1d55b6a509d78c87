@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5d8c3d12_3c91aa6f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013800
+      },
+      "writtenOn": "2018-03-28T14:42:16Z",
+      "side": 1,
+      "message": "Push works",
+      "revId": "77edb1dce5612b4878253efa1d55b6a509d78c87",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "acffe9bf_3c34a32a",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013800
+      },
+      "writtenOn": "2018-03-28T14:42:16Z",
+      "side": 1,
+      "message": "All wrong code removed",
+      "revId": "77edb1dce5612b4878253efa1d55b6a509d78c87",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
