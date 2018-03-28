@@ -12,33 +12,35 @@ public class BuggyCode {
 		System.out.println("BuggyCode Sample 001 for BC_IMPOSSIBLE_CAST");
 		// WRONG
 		try {
-			BuggyCode.bcImpossibleCastWRONG();
+			BuggyCode.bcImpossibleCastCORRECT();
 		} catch (final ClassCastException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
 		// CORRECT
+          	// good refractored code
 		BuggyCode.bcImpossibleCastCORRECT();
 
 		System.out.println("BuggyCode Sample 002 for BC_IMPOSSIBLE_DOWNCAST");
 		// WRONG
 		try {
-			BuggyCode.bcImpossibleDowncastWRONG();
+			BuggyCode.bcImpossibleDowncastCORRECT();
 		} catch (final ClassCastException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
 		// CORRECT
+        	  // seems to be pretty good
 		BuggyCode.bcImpossibleDowncastCORRECT();
 
 		System.out.println("BuggyCode Sample 003 for BC_IMPOSSIBLE_INSTANCEOF");
 		// WRONG
-		BuggyCode.bcImpossibleInstanceOfWRONG();
+		BuggyCode.bcImpossibleInstanceOfCORRECT();
 		// CORRECT
 		BuggyCode.bcImpossibleInstanceOfCORRECT();
 
 		System.out.println("BuggyCode Sample 004 for BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY");
 		// WRONG
 		try {
-			BuggyCode.bcImpossibleDowncastOfArrayWRONG();
+			BuggyCode.bcImpossibleDowncastOfArrayCORRECT();
 		} catch (final ClassCastException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
@@ -47,20 +49,20 @@ public class BuggyCode {
 
 		System.out.println("BuggyCode Sample 005 for DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE");
 		// WRONG
-		BuggyCode.dmiBigDecimalConstructedFromDoubleWRONG();
+		BuggyCode.dmiBigDecimalConstructedFromDoubleCORRECT();
 		// CORRECT
 		BuggyCode.dmiBigDecimalConstructedFromDoubleCORRECT();
 
 		System.out.println("BuggyCode Sample 006 for ES_COMPARING_STRINGS_WITH_EQ");
 		// WRONG
-		BuggyCode.esComparingStringsWithEqWRONG();
+		BuggyCode.esComparingStringsWithEqCORRECT();
 		// CORRECT
 		BuggyCode.esComparingStringsWithEqCORRECT();
 
 		System.out.println("BuggyCode Sample 007 for VA_FORMAT_STRING_ILLEGAL");
 		// WRONG
 		try {
-			BuggyCode.vaFormatStringIllegalWRONG();
+			BuggyCode.vaFormatStringIllegalCORRECT();
 		} catch (final UnknownFormatConversionException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
@@ -69,14 +71,14 @@ public class BuggyCode {
 
 		System.out.println("BuggyCode Sample 008 for RV_RETURN_VALUE_IGNORED");
 		// WRONG
-		BuggyCode.rvReturnValueIgnoredWRONG();
+		BuggyCode.rvReturnValueIgnoredCORRECT();
 		// CORRECT
 		BuggyCode.rvReturnValueIgnoredCORRECT();
 
 		System.out.println("BuggyCode Sample 009 for NP_ALWAYS_NULL");
 		// WRONG
 		try {
-			BuggyCode.npAlwaysNullWRONG();
+			BuggyCode.npAlwaysNullCORRECT();
 		} catch (final NullPointerException e) {
 			System.out.println("   - ERROR:" + e.getMessage());
 		}
@@ -85,7 +87,7 @@ public class BuggyCode {
 
 		System.out.println("BuggyCode Sample 010 for QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT");
 		// WRONG
-		BuggyCode.qabQuestionableBooleanAssignmentWRONG();
+		BuggyCode.qabQuestionableBooleanAssignmentCORRECT();
 		// CORRECT
 		BuggyCode.qabQuestionableBooleanAssignmentCORRECT();
 
