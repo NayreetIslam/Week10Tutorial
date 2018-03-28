@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "659ee307_37b08d17",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013815
+      },
+      "writtenOn": "2018-03-28T15:10:32Z",
+      "side": 1,
+      "message": "Solve more bugs in other methods",
+      "revId": "e2431f3d0a1cbebed76bab66cd076144d0e08bf6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
