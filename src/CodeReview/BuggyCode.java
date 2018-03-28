@@ -129,7 +129,7 @@ public class BuggyCode {
 		final Collection<String> stringVector = new ArrayList<String>();
 		stringVector.add("abc");
 		stringVector.add("xyz");
-		final String[] stringArray = (String[]) stringVector.toArray();
+		final String[] stringArray = stringVector.toArray(new String[stringVector.size()]);
 		System.out.println("   - " + stringArray.length);
 	}
 
@@ -142,7 +142,7 @@ public class BuggyCode {
 	}
 
 	private static void dmiBigDecimalConstructedFromDoubleWRONG() {
-		final BigDecimal bigDecimal = new BigDecimal(3.1);
+		final BigDecimal bigDecimal = new BigDecimal("3.1");
 		System.out.println("   - " + bigDecimal.toString());
 	}
 
@@ -156,7 +156,7 @@ public class BuggyCode {
 		final StringBuilder sb2 = new StringBuilder("1234");
 		final String string1 = sb1.toString();
 		final String string2 = sb2.toString();
-		System.out.println("   - " + (string1 == string2));
+		System.out.println("   - " + string1.equals(string2));
 	}
 
 	private static void esComparingStringsWithEqCORRECT() {
@@ -168,7 +168,7 @@ public class BuggyCode {
 	}
 
 	private static void vaFormatStringIllegalWRONG() {
-		System.out.println(String.format("   - %>s  %s", "10", "9"));
+		System.out.println(String.format("   - %s > %s", "10", "9"));
 	}
 
 	private static void vaFormatStringIllegalCORRECT() {
@@ -207,7 +207,7 @@ public class BuggyCode {
 
 	private static void qabQuestionableBooleanAssignmentWRONG() {
 		boolean value = false;
-		if (value = true) {
+		if (value == true) {
 			System.out.println(String.format("   - value is true"));
 		} else {
 			System.out.println(String.format("   - value is false"));
