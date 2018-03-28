@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a4c85e73_f07853bb",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013801
+      },
+      "writtenOn": "2018-03-28T14:34:39Z",
+      "side": 1,
+      "message": "Changed errors",
+      "revId": "e5ddbab7ac13cbafeb1843f14c244cb17cd580c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "caff0257_b49960e4",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013801
+      },
+      "writtenOn": "2018-03-28T14:34:39Z",
+      "side": 1,
+      "message": "added correct method call",
+      "revId": "e5ddbab7ac13cbafeb1843f14c244cb17cd580c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e7a4f60c_c81d13b8",
+        "filename": "src/CodeReview/BuggyCode.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1013801
+      },
+      "writtenOn": "2018-03-28T14:34:39Z",
+      "side": 1,
+      "message": "correct method implementation",
+      "revId": "e5ddbab7ac13cbafeb1843f14c244cb17cd580c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
